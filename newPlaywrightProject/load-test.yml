@@ -1,0 +1,9 @@
+config:
+  target: "https://demo.playwright.dev/todomvc"
+  phases:
+    - duration: 20
+      arrivalRate: 2
+  processor: "tests-examples/demo-todo-app.spec.ts"
+scenarios:
+  - flow:
+      - function: "runPlaywrightTest"
